@@ -1,11 +1,15 @@
 <h1>Enter a statement</h1>
-<% if @statement %>
-<%= @statement %>
-<h2>Is that what she said?</h2>
-<%= @result.to_s %>
-<% end %>
-
 <% form_for(:query, :url => query_url ) do |f| %>
   <%= f.text_field :query %>
   <%= f.submit %>
 <% end %>
+<% if @statement %>
+
+<h2><%= @statement %></h2>
+<fieldset>
+  <legend>Is that what she said?</legend>
+  <h3 style='color:<%= @result ? 'green' : 'red' %>'><%= @result.to_s %></h3>
+</fieldset>
+<% end %>
+
+
