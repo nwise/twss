@@ -29,5 +29,7 @@ gem 'twss'
 # and rake tasks are available in development mode:
  group :development, :test do
    gem 'rspec-rails'
+   gem 'ruby-debug19'
    gem 'sqlite3'
+   gem 'heroku'
  end
