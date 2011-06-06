@@ -4,9 +4,8 @@ class HomepageController < ApplicationController
   end
 
   def query
-    @query = params[:query][:query]
-    @result = TWSS(@query)
-    debugger
+    @statement = params[:query][:query]
+    @result = TWSS(@statement)
     render :index
   end
 end
