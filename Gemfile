@@ -7,6 +7,7 @@ gem 'rails', '3.0.7'
 
 gem 'sqlite3'
 gem 'twss'
+gem 'jquery-rails'
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -29,7 +30,7 @@ gem 'twss'
 # and rake tasks are available in development mode:
  group :development, :test do
    gem 'rspec-rails'
-   gem 'ruby-debug19'
+   #gem 'ruby-debug'
    gem 'sqlite3'
    gem 'heroku'
  end
