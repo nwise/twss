@@ -6,10 +6,11 @@
 <% if @statement %>
 
 <h2><%= @statement %></h2>
-<fieldset>
-  <legend>Is that what she said?</legend>
-  <h3 style='color:<%= @result ? 'green' : 'red' %>'><%= @result.to_s %></h3>
-</fieldset>
+  <% if @result %>
+    <h3>That's what SHE said!</h3>
+  <% else %>
+    <h3>Lame!</h3>
+  <% end %>
 <% end %>
 
 
