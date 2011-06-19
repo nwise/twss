@@ -3,7 +3,7 @@ html{
 	}
 	
 body{
-	background-image:url(../images/bg.gif);
+	background-image:url(/images/bg.gif);
 	background-repeat:repeat-x;
 	background-color:#ffcc00;
 	}
@@ -22,7 +22,7 @@ p{
 #container{
 	width:470px;
 	margin:0 auto;
-	background-image: url(../images/fade.gif);
+	background-image: url(/images/fade.gif);
 	height: 485px;
 	background-repeat: no-repeat;
 	background-position: center;

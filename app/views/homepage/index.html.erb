@@ -1,16 +1,17 @@
-<h1>Enter a statement</h1>
-<% form_for(:query, :url => query_url ) do |f| %>
-  <%= f.text_field :query %>
-  <%= f.submit %>
-<% end %>
-<% if @statement %>
-
-<h2><%= @statement %></h2>
+<img src="images/twss-logo.png" width="470" height="291" alt="That's What She Said?" class="main-image" />
+<img src="images/line.gif" width="1" height="2" alt="That's What She Said" class="line" />
+<div class="content">
+  <p style="text-align:center; font-weight:bold">Enter a phrase to see if that's what she said! </p>
+  <% form_for(:query, :url => query_url ) do |f| %>
+    <%= f.text_field :query, :size => '77' %>
+    <%= f.submit "TWSS?" %>
+  <% end %>
+  <h2><%= @statement %></h2>
   <% if @result %>
     <h3>That's what SHE said!</h3>
   <% else %>
     <h3>Lame!</h3>
   <% end %>
-<% end %>
+</div>
 
 
