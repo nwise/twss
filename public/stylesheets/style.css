@@ -50,18 +50,25 @@ p{
 	top: 350px;
 }
 
-label{
+label {
   text-align:center;
   font-weight:bold;
 }
 
-p#result{
-  font-weight:bold;
-  font-size: 72px;
-  text-align: center;
+p {
+  text-align:center;
 }
 
-p#query{
+p#result {
   font-weight:bold;
-  text-align: center;
+  font-size: 72px;
+  text-transform: capitalize;
+}
+
+p#query {
+  font-weight:bold;
+}
+
+#twss_query{
+  width:400px;
 }

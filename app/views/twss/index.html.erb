@@ -4,7 +4,7 @@
   <div class="content">
     <%= form_for(:twss, :as => :twss, :html => {:id => 'twss_form'} ) do |f| %>
       <p><%= f.label :label, "Enter a phrase to see if that's what she said!" %>
-      <%= f.text_field :query, :size => '77' %>
+      <%= f.text_field :query %>
       <%= f.submit "TWSS?" %></p>
     <% end %>
     <div id="result"></div>
