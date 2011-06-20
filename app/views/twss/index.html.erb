@@ -1,0 +1,23 @@
+<div id='twss_app'>
+  <img src="images/twss-logo.png" width="470" height="291" alt="That's What She Said?" class="main-image" />
+  <img src="images/line.gif" width="1" height="2" alt="That's What She Said" class="line" />
+  <div class="content">
+    <%= form_for(:twss, :as => :twss, :html => {:id => 'twss_form'} ) do |f| %>
+      <%= f.label :label, "Enter a phrase to see if that's what she said!" %>
+      <%= f.text_field :query, :size => '77' %>
+      <%= f.submit "TWSS?" %>
+    <% end %>
+    <div id="result"></div>
+  </div>
+  <script id='twss_template' type='text/html'>
+    <div id='answer'>
+      <p id='query'>
+      <span>({{query}})</span>
+      </p>
+      <p id='result'>
+        <span>{{result}}!</span>
+      </p>
+    </div>
+  </script>
+</div>
+

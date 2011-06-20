@@ -1,0 +1,17 @@
+<%= form_for(@twss) do |f| %>
+  <% if @twss.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@twss.errors.count, "error") %> prohibited this twss from being saved:</h2>
+
+      <ul>
+      <% @twss.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
