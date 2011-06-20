@@ -3,9 +3,9 @@
   <img src="images/line.gif" width="1" height="2" alt="That's What She Said" class="line" />
   <div class="content">
     <%= form_for(:twss, :as => :twss, :html => {:id => 'twss_form'} ) do |f| %>
-      <%= f.label :label, "Enter a phrase to see if that's what she said!" %>
+      <p><%= f.label :label, "Enter a phrase to see if that's what she said!" %>
       <%= f.text_field :query, :size => '77' %>
-      <%= f.submit "TWSS?" %>
+      <%= f.submit "TWSS?" %></p>
     <% end %>
     <div id="result"></div>
   </div>
