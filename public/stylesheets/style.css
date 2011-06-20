@@ -58,6 +58,7 @@ label{
 p#result{
   font-weight:bold;
   font-size: 72px;
+  text-align: center;
 }
 
 p#query{
