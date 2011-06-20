@@ -1,6 +1,6 @@
 class HomepageController < ApplicationController
   def index
-    render :index
+    redirect_to '/twss'
   end
 
   def query
